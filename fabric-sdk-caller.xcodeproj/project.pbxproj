@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EC419CC22A7CF8A00E4A6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC419CB22A7CF8A00E4A6F2 /* AppDelegate.swift */; };
+		2EC419CE22A7CF8A00E4A6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC419CD22A7CF8A00E4A6F2 /* ViewController.swift */; };
+		2EC419D022A7CF8B00E4A6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC419CF22A7CF8B00E4A6F2 /* Assets.xcassets */; };
+		2EC419D322A7CF8B00E4A6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC419D122A7CF8B00E4A6F2 /* Main.storyboard */; };
+		2EC419DF22A7CF8B00E4A6F2 /* fabric_sdk_callerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC419DE22A7CF8B00E4A6F2 /* fabric_sdk_callerTests.swift */; };
+		2EC419EA22A7CF8B00E4A6F2 /* fabric_sdk_callerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC419E922A7CF8B00E4A6F2 /* fabric_sdk_callerUITests.swift */; };
+		530491E4C012D6679D93CA97 /* sdk.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53049BAA1F985D109A17F85B /* sdk.grpc.swift */; };
+		5304990F2369F20611F593C8 /* sdk.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530499864C7537C616BD3CC9 /* sdk.pb.swift */; };
+		B7DC12A6E69695D9C214CE89 /* Pods_fabric_sdk_caller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9B092CA76ED275DF0BA742 /* Pods_fabric_sdk_caller.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EC419DB22A7CF8B00E4A6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC419C022A7CF8A00E4A6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EC419C722A7CF8A00E4A6F2;
+			remoteInfo = "fabric-sdk-caller";
+		};
+		2EC419E622A7CF8B00E4A6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC419C022A7CF8A00E4A6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EC419C722A7CF8A00E4A6F2;
+			remoteInfo = "fabric-sdk-caller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EC419C822A7CF8A00E4A6F2 /* fabric-sdk-caller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fabric-sdk-caller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC419CB22A7CF8A00E4A6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EC419CD22A7CF8A00E4A6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EC419CF22A7CF8B00E4A6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EC419D222A7CF8B00E4A6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EC419D422A7CF8B00E4A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC419D522A7CF8B00E4A6F2 /* fabric_sdk_caller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fabric_sdk_caller.entitlements; sourceTree = "<group>"; };
+		2EC419DA22A7CF8B00E4A6F2 /* fabric-sdk-callerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fabric-sdk-callerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC419DE22A7CF8B00E4A6F2 /* fabric_sdk_callerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fabric_sdk_callerTests.swift; sourceTree = "<group>"; };
+		2EC419E022A7CF8B00E4A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC419E522A7CF8B00E4A6F2 /* fabric-sdk-callerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fabric-sdk-callerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC419E922A7CF8B00E4A6F2 /* fabric_sdk_callerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fabric_sdk_callerUITests.swift; sourceTree = "<group>"; };
+		2EC419EB22A7CF8B00E4A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		530499864C7537C616BD3CC9 /* sdk.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdk.pb.swift; sourceTree = "<group>"; };
+		53049BAA1F985D109A17F85B /* sdk.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdk.grpc.swift; sourceTree = "<group>"; };
+		542B1AEE984DF6F6DBFAFDEA /* Pods-fabric-sdk-caller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fabric-sdk-caller.release.xcconfig"; path = "Target Support Files/Pods-fabric-sdk-caller/Pods-fabric-sdk-caller.release.xcconfig"; sourceTree = "<group>"; };
+		6C9B092CA76ED275DF0BA742 /* Pods_fabric_sdk_caller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fabric_sdk_caller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2652103CF3AE125F9FEC93 /* Pods-fabric-sdk-caller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fabric-sdk-caller.debug.xcconfig"; path = "Target Support Files/Pods-fabric-sdk-caller/Pods-fabric-sdk-caller.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EC419C522A7CF8A00E4A6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DC12A6E69695D9C214CE89 /* Pods_fabric_sdk_caller.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419D722A7CF8B00E4A6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419E222A7CF8B00E4A6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10AA134DF0C0BF6078F8D230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C9B092CA76ED275DF0BA742 /* Pods_fabric_sdk_caller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EC419BF22A7CF8A00E4A6F2 = {
+			isa = PBXGroup;
+			children = (
+				2EC419CA22A7CF8A00E4A6F2 /* fabric-sdk-caller */,
+				2EC419DD22A7CF8B00E4A6F2 /* fabric-sdk-callerTests */,
+				2EC419E822A7CF8B00E4A6F2 /* fabric-sdk-callerUITests */,
+				2EC419C922A7CF8A00E4A6F2 /* Products */,
+				653B9C231504CDA955BFF428 /* Pods */,
+				10AA134DF0C0BF6078F8D230 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EC419C922A7CF8A00E4A6F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EC419C822A7CF8A00E4A6F2 /* fabric-sdk-caller.app */,
+				2EC419DA22A7CF8B00E4A6F2 /* fabric-sdk-callerTests.xctest */,
+				2EC419E522A7CF8B00E4A6F2 /* fabric-sdk-callerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EC419CA22A7CF8A00E4A6F2 /* fabric-sdk-caller */ = {
+			isa = PBXGroup;
+			children = (
+				2EC419CB22A7CF8A00E4A6F2 /* AppDelegate.swift */,
+				2EC419CD22A7CF8A00E4A6F2 /* ViewController.swift */,
+				2EC419CF22A7CF8B00E4A6F2 /* Assets.xcassets */,
+				2EC419D122A7CF8B00E4A6F2 /* Main.storyboard */,
+				2EC419D422A7CF8B00E4A6F2 /* Info.plist */,
+				2EC419D522A7CF8B00E4A6F2 /* fabric_sdk_caller.entitlements */,
+				53049BAA1F985D109A17F85B /* sdk.grpc.swift */,
+				530499864C7537C616BD3CC9 /* sdk.pb.swift */,
+			);
+			path = "fabric-sdk-caller";
+			sourceTree = "<group>";
+		};
+		2EC419DD22A7CF8B00E4A6F2 /* fabric-sdk-callerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EC419DE22A7CF8B00E4A6F2 /* fabric_sdk_callerTests.swift */,
+				2EC419E022A7CF8B00E4A6F2 /* Info.plist */,
+			);
+			path = "fabric-sdk-callerTests";
+			sourceTree = "<group>";
+		};
+		2EC419E822A7CF8B00E4A6F2 /* fabric-sdk-callerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EC419E922A7CF8B00E4A6F2 /* fabric_sdk_callerUITests.swift */,
+				2EC419EB22A7CF8B00E4A6F2 /* Info.plist */,
+			);
+			path = "fabric-sdk-callerUITests";
+			sourceTree = "<group>";
+		};
+		653B9C231504CDA955BFF428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE2652103CF3AE125F9FEC93 /* Pods-fabric-sdk-caller.debug.xcconfig */,
+				542B1AEE984DF6F6DBFAFDEA /* Pods-fabric-sdk-caller.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EC419C722A7CF8A00E4A6F2 /* fabric-sdk-caller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC419EE22A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-caller" */;
+			buildPhases = (
+				BE6738C444938DA2222E8542 /* [CP] Check Pods Manifest.lock */,
+				2EC419C422A7CF8A00E4A6F2 /* Sources */,
+				2EC419C522A7CF8A00E4A6F2 /* Frameworks */,
+				2EC419C622A7CF8A00E4A6F2 /* Resources */,
+				18269DBC2D9F1B4DFA0EA6DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fabric-sdk-caller";
+			productName = "fabric-sdk-caller";
+			productReference = 2EC419C822A7CF8A00E4A6F2 /* fabric-sdk-caller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EC419D922A7CF8B00E4A6F2 /* fabric-sdk-callerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC419F122A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-callerTests" */;
+			buildPhases = (
+				2EC419D622A7CF8B00E4A6F2 /* Sources */,
+				2EC419D722A7CF8B00E4A6F2 /* Frameworks */,
+				2EC419D822A7CF8B00E4A6F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EC419DC22A7CF8B00E4A6F2 /* PBXTargetDependency */,
+			);
+			name = "fabric-sdk-callerTests";
+			productName = "fabric-sdk-callerTests";
+			productReference = 2EC419DA22A7CF8B00E4A6F2 /* fabric-sdk-callerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EC419E422A7CF8B00E4A6F2 /* fabric-sdk-callerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC419F422A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-callerUITests" */;
+			buildPhases = (
+				2EC419E122A7CF8B00E4A6F2 /* Sources */,
+				2EC419E222A7CF8B00E4A6F2 /* Frameworks */,
+				2EC419E322A7CF8B00E4A6F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EC419E722A7CF8B00E4A6F2 /* PBXTargetDependency */,
+			);
+			name = "fabric-sdk-callerUITests";
+			productName = "fabric-sdk-callerUITests";
+			productReference = 2EC419E522A7CF8B00E4A6F2 /* fabric-sdk-callerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EC419C022A7CF8A00E4A6F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = liuhuiyu;
+				TargetAttributes = {
+					2EC419C722A7CF8A00E4A6F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2EC419D922A7CF8B00E4A6F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2EC419C722A7CF8A00E4A6F2;
+					};
+					2EC419E422A7CF8B00E4A6F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2EC419C722A7CF8A00E4A6F2;
+					};
+				};
+			};
+			buildConfigurationList = 2EC419C322A7CF8A00E4A6F2 /* Build configuration list for PBXProject "fabric-sdk-caller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EC419BF22A7CF8A00E4A6F2;
+			productRefGroup = 2EC419C922A7CF8A00E4A6F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EC419C722A7CF8A00E4A6F2 /* fabric-sdk-caller */,
+				2EC419D922A7CF8B00E4A6F2 /* fabric-sdk-callerTests */,
+				2EC419E422A7CF8B00E4A6F2 /* fabric-sdk-callerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EC419C622A7CF8A00E4A6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC419D022A7CF8B00E4A6F2 /* Assets.xcassets in Resources */,
+				2EC419D322A7CF8B00E4A6F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419D822A7CF8B00E4A6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419E322A7CF8B00E4A6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18269DBC2D9F1B4DFA0EA6DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fabric-sdk-caller/Pods-fabric-sdk-caller-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fabric-sdk-caller/Pods-fabric-sdk-caller-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fabric-sdk-caller/Pods-fabric-sdk-caller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6738C444938DA2222E8542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fabric-sdk-caller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EC419C422A7CF8A00E4A6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC419CE22A7CF8A00E4A6F2 /* ViewController.swift in Sources */,
+				2EC419CC22A7CF8A00E4A6F2 /* AppDelegate.swift in Sources */,
+				530491E4C012D6679D93CA97 /* sdk.grpc.swift in Sources */,
+				5304990F2369F20611F593C8 /* sdk.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419D622A7CF8B00E4A6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC419DF22A7CF8B00E4A6F2 /* fabric_sdk_callerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC419E122A7CF8B00E4A6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC419EA22A7CF8B00E4A6F2 /* fabric_sdk_callerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EC419DC22A7CF8B00E4A6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EC419C722A7CF8A00E4A6F2 /* fabric-sdk-caller */;
+			targetProxy = 2EC419DB22A7CF8B00E4A6F2 /* PBXContainerItemProxy */;
+		};
+		2EC419E722A7CF8B00E4A6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EC419C722A7CF8A00E4A6F2 /* fabric-sdk-caller */;
+			targetProxy = 2EC419E622A7CF8B00E4A6F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EC419D122A7CF8B00E4A6F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC419D222A7CF8B00E4A6F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EC419EC22A7CF8B00E4A6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EC419ED22A7CF8B00E4A6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2EC419EF22A7CF8B00E4A6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2652103CF3AE125F9FEC93 /* Pods-fabric-sdk-caller.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-caller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-caller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2EC419F022A7CF8B00E4A6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542B1AEE984DF6F6DBFAFDEA /* Pods-fabric-sdk-caller.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-caller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-caller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2EC419F222A7CF8B00E4A6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-callerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-callerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fabric-sdk-caller.app/Contents/MacOS/fabric-sdk-caller";
+			};
+			name = Debug;
+		};
+		2EC419F322A7CF8B00E4A6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-callerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-callerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fabric-sdk-caller.app/Contents/MacOS/fabric-sdk-caller";
+			};
+			name = Release;
+		};
+		2EC419F522A7CF8B00E4A6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-callerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-callerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "fabric-sdk-caller";
+			};
+			name = Debug;
+		};
+		2EC419F622A7CF8B00E4A6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "fabric-sdk-callerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lhybdv.fabric-sdk-callerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "fabric-sdk-caller";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EC419C322A7CF8A00E4A6F2 /* Build configuration list for PBXProject "fabric-sdk-caller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC419EC22A7CF8B00E4A6F2 /* Debug */,
+				2EC419ED22A7CF8B00E4A6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC419EE22A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-caller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC419EF22A7CF8B00E4A6F2 /* Debug */,
+				2EC419F022A7CF8B00E4A6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC419F122A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-callerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC419F222A7CF8B00E4A6F2 /* Debug */,
+				2EC419F322A7CF8B00E4A6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC419F422A7CF8B00E4A6F2 /* Build configuration list for PBXNativeTarget "fabric-sdk-callerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC419F522A7CF8B00E4A6F2 /* Debug */,
+				2EC419F622A7CF8B00E4A6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EC419C022A7CF8A00E4A6F2 /* Project object */;
+}

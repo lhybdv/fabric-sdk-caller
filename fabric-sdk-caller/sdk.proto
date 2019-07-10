@@ -1,0 +1,74 @@
+syntax = "proto3";
+package grpc;
+
+service SDK {
+    rpc QueryInstalled (Empty) returns (QueryChainCodeResponse) {}
+    rpc QueryInstantiated (Empty) returns (QueryChainCodeResponse) {}
+    rpc Upgrade(UpgradeChainCodeRequest) returns (UpgradeChainCodeResponse) {}
+
+    rpc Query (QueryRequest) returns (QueryResponse) {}
+    rpc Create (CreateRequest) returns (CreateResponse) {}
+    rpc Transfer (TransferRequest) returns (TransferResponse) {}
+    rpc QueryById (QueryByIdRequest) returns (QueryByIdResponse) {}
+}
+
+message Empty {}
+
+message QueryChainCodeResponse {
+    repeated ChainCodeInfo ChainCodeInfos = 1;
+}
+
+message ChainCodeInfo {
+    string Org = 1;
+    string Name = 2;
+    string Version = 3;
+}
+
+message UpgradeChainCodeRequest {
+    string Nodes = 1;
+}
+
+message UpgradeChainCodeResponse {
+    string Status = 1;
+    string Version = 2;
+    string Policy = 3;
+}
+
+message QueryRequest {
+    string Account = 1;
+}
+
+message QueryResponse {
+    string Result = 1;
+}
+
+message CreateRequest {
+    string Account = 1;
+    string Amount = 2;
+}
+
+message CreateResponse {
+    string Result = 1;
+}
+
+message TransferRequest {
+    string From = 1;
+    string To = 2;
+    string Amount = 3;
+}
+
+message TransferResponse {
+    string Result = 1;
+}
+
+
+message QueryByIdRequest {
+    string TransactionId = 1;
+}
+
+message QueryByIdResponse {
+    string TransactionId = 1;
+    string CreateTime = 2;
+    repeated string Args = 3;
+}
+
